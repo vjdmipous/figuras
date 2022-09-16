@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Figuras</title>
+  </head>
+
+  <body>
+    <div class="area">
+      <div class="cabecera">
+        <div class="titulo-proyecto">
+          <p>
+            FIGURAS - Equipo
+            <span class="equipo" id="equipo">
+              <!-- JS modifica el nombre del equipo  -->
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="panel">
+        <div id="panelPatron" class="panel__patron">
+          <span class="figura"></span>
+        </div>
+        <div class="panel__alternativas">
+          <span class="figura circulo" data-figura="circulo" draggable="true"></span>
+          <span class="figura triangulo" data-figura="triangulo" draggable="true"></span>
+          <span class="figura hoja" data-figura="hoja" draggable="true"></span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

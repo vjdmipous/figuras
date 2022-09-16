@@ -1,0 +1,130 @@
+/**********************************************************************/
+/*  PROYECTO FIGURAS              */
+/*  EQUIPO XXXX                 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --color-fondo: hsl(69, 42%, 94%);
+  --color-primario: hsl(0, 0%, 0%);
+  --color-sobre-primario: hsl(2, 100%, 100%);
+  --color-secundario: hsl(2, 50%, 102%);
+  --color-sobre-secundario: hsl(2, 0%, 0%);
+
+  /* Concretar el diseño tipográfico con fuentes no generalistas */
+  --fuente-primaria: sans-serif;
+  --fuente-secuendaria: sans-serif;
+
+  /* Color y tamaño de las figuras */
+  --color-figuras: hsl(0, 0%, 0%);
+  --longitud-muestra: 100px;
+}
+
+/**********************************************************************/
+
+.area {
+  height: 100vh;
+  background-color: var(--color-fondo);
+  font-family: var(--fuente-primaria);
+}
+
+/**********************************************************************/
+.cabecera {
+  padding: 1.5rem;
+  background-color: var(--color-primario);
+}
+
+.titulo-proyecto {
+  color: var(--color-sobre-primario);
+  text-align: center;
+}
+
+.equipo {
+  text-transform: uppercase;
+}
+
+/**********************************************************************/
+
+.panel {
+  width: clamp(300px, 60%, 600px);
+  margin: 1.5rem auto;
+  border: 1px solid black;
+}
+
+/**********************************************************************/
+
+.panel__patron {
+  /* El estilo del borde cambiará dinámicamente con JS 
+     para ilustrar cuando una figura entra en el panel del patrón  */
+  border: 1px solid var(--color-primario);
+
+  /* ======= COMPLETAR REGLA ====== */
+  /* El panel del patrón se muestra centrado dentro del panel */
+  /* Su dimensión admite albergar la figura patrón de forma holgada */
+}
+
+/**********************************************************************/
+
+.panel__alternativas {
+  /* Las figuras se enmarcan para identificarlas como un grupo */
+  border: 1px solid var(--color-primario);
+
+  /* ======= COMPLETAR REGLA ====== */
+  /* Las figuras del panel se muestran centradas */
+}
+
+/**********************************************************************/
+
+.figura {
+  /* ======= COMPLETAR REGLA ====== */
+
+  /* Las figuras se enmarcan en cuadrados separados equidistantemente */
+  /* ACLARACIONES:
+       - Las figuras son definidas en HTML mediante elementos span
+       - La dimensión se define en base a --logitud-muestra  */
+}
+
+.panel__patron .figura {
+  /* La figura del patrón se muestra ligeramente transparente 
+     para destacarla respecto de las del panel de alternativas */
+  opacity: 50%;
+}
+
+/**********************************************************************/
+
+/* Estilos para ilustrar la operación de arrastrar y soltar  */
+
+.figura--sobrevolando {
+  /* ======= COMPLETAR REGLA ====== */
+}
+
+.figura--arrastrando {
+  /* ======= COMPLETAR REGLA ====== */
+}
+
+/**********************************************************************/
+/* Formas que pueden adoptar las figuras         */
+
+.circulo {
+  border-radius: 50%;
+  background-color: var(--color-figuras);
+}
+
+.triangulo {
+  --mitad: calc(var(--longitud-muestra) / 2);
+
+  border-left: var(--mitad) solid transparent;
+  border-right: var(--mitad) solid transparent;
+  border-bottom: var(--longitud-muestra) solid var(--color-figuras);
+}
+
+.hoja {
+  background-color: var(--color-figuras);
+  border-radius: 0% 75%;
+}
