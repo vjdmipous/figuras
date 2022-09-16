@@ -7,18 +7,19 @@ La actividad tiene como cometido completar el proyecto web inacabado del reposit
 El proyecto ilustra un simple juego de emparejamiento de figuras hacendo uso de la API Drag and DROP.
 Para más información sobre esta API puede consultarse [MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API) y [Webdev](https://web.dev/drag-and-drop/)
 
-Se muestra un patrón de figura y tres figuras alternativas como respuesta.
-El usuario debe arrrastrar una de las tres figuras y soltarla en el patrón
+En pantalla se muestra un patrón de figura y tres figuras alternativas como respuesta.
+El usuario debe arrrastrar una de las tres figuras y soltarla en el patrón.
 Para señalar que el emparejamiento es correcto, se modifica el estilo del patrón y se
 desactiva la operación de arrastrar y soltar.
 
-Para modificar los estilos se hace uso de las propiedades style y draggable
-[MDN: style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
-[MDN: draggable](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/draggable)
+En pantalla se muestra un patrón de figura y tres figuras alternativas como respuesta.
+El usuario debe arrrastrar una de las tres figuras y soltarla en el patrón.
+Para señalar que el emparejamiento es correcto, se modifica el estilo del patrón y se
+desactiva la operación de arrastrar y soltar. Para modificar los estilos se hace uso de las propiedades style [MDN: style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) y draggable [MDN: draggable](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/draggable)
 
-Los elementos HTML que representan figuras incluyen un atributo data-figura
+Los elementos HTML que representan figuras incluyen un atributo _data-figura_
 que almacena el tipo de figura. Los atributos data-\_ pueden manipularse mediante la propiedad dataset
-[MDN data-\*](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-_)
+[MDN data-\*](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
 
 # Contenido
 
@@ -64,7 +65,6 @@ El estilo de codificación en el proyecto se apoya en las siguientes caracterís
 - Notación hsl() para codificar los colores
 - Elemento :root para aunar las variables del diseño cromático y tipográfico
 - Variables: Generalizar los estilos CSS mediante el uso de variables var() y la función calc()
-- Evitar los números mágicos
 - Uso preferente de unidades de longitud flexibles (em, rem, vh, vw, %)
 - Criterio homogéneo de organización y nomenclatura
   - En reglas y declaraciones en CSS
