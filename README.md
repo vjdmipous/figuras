@@ -10,11 +10,6 @@ Para más información sobre esta API puede consultarse [MDN](https://developer.
 En pantalla se muestra un patrón de figura y tres figuras alternativas como respuesta.
 El usuario debe arrrastrar una de las tres figuras y soltarla en el patrón.
 Para señalar que el emparejamiento es correcto, se modifica el estilo del patrón y se
-desactiva la operación de arrastrar y soltar.
-
-En pantalla se muestra un patrón de figura y tres figuras alternativas como respuesta.
-El usuario debe arrrastrar una de las tres figuras y soltarla en el patrón.
-Para señalar que el emparejamiento es correcto, se modifica el estilo del patrón y se
 desactiva la operación de arrastrar y soltar. Para modificar los estilos se hace uso de las propiedades style [MDN: style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) y draggable [MDN: draggable](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/draggable)
 
 Los elementos HTML que representan figuras incluyen un atributo _data-figura_
@@ -50,10 +45,17 @@ Los cambios en _index.html_ serán admitidos sólo en el caso de que la solució
 
 # Objetivos:
 
-El objetivo de la actividad es doble:
+El objetivo de la actividad es el aprendizaje de las dos siguientes técnicas:
 
-- realizar composiciones apoyándose exclusivamente en el flujo normal. Es decir, los valores de la propiedad _display_ se limitan a: block, inline y inline-block
+- realizar composiciones apoyándose exclusivamente en el flujo normal [MDN: Normal Flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow). Es decir, los valores de la propiedad _display_ se limitan a: _block_, _inline_ y _inline-block_. 
 - interacción basada en arrastrar y soltar.
+
+Desde el punto de vista del diseño, esta actividad pretende:
+
+- reflexionar sobre los problemas que presenta el flujo normal respecto al espaciado, la distribución y, especilamente, respecto al centrado (el valor _auto_ en la propiedad _margin_)
+- el uso apropiado de las unidades de medida espaciales en el diseño (em, rem, %, ...)
+- la estilización de los elementos como apoyo a la comprensión de la interacción (ej.: ¿cómo hacer notar al usuario que sus acciones son correctas?)
+- la flexibilidad en el diseño: _var()_, _calc()_, _clamp(min, preferente, max)_, :root
 
 # Indicaciones
 
@@ -73,4 +75,3 @@ El estilo de codificación en el proyecto se apoya en las siguientes caracterís
 - Comentarios
   - incluir las referencias utilizadas para el diseño o codificación (MDN, Youtube, Stackoverflow , Coolors, etc.)
   - comentar los aspectos que faciliten la lectura del código cuando sea necesario, evitando los comentarios triviales que se limitan a reescribir el código
-
